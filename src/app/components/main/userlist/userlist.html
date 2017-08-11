@@ -1,0 +1,10 @@
+<p>Hello <i style="color: red">{{vm.username}}</i> this is a userlist</p>
+<div>
+  <ul>
+    <li ng-repeat="user in vm.userList"> <div ng-click="vm.openChat(user._id)">{{user.email}}</div> </li>
+  </ul>
+</div>
+
+
+<div> Chat opened for {{vm.opened}}</div>
+<button ng-click="vm.logout()">logout</button>
